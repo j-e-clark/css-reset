@@ -1,0 +1,28 @@
+{
+  "name": "@jeclark/css-reset",
+  "version": "0.1.0",
+  "description": "Minimal CSS reset for modern needs",
+  "main": "reset.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss reset.css > reset.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-e-clark/css-reset.git"
+  },
+  "keywords": [
+    "CSS",
+    "reset"
+  ],
+  "author": "James Clark <james@jeclark.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j-e-clark/css-reset/issues"
+  },
+  "homepage": "https://github.com/j-e-clark/css-reset#readme",
+  "devDependencies": {
+    "cssnano": "^5.0.17",
+    "postcss-cli": "^9.1.0"
+  }
+}
