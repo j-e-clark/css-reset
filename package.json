@@ -1,8 +1,12 @@
 {
   "name": "@jeclark/css-reset",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Minimal CSS reset for modern needs",
   "main": "reset.css",
+  "files": [
+    "reset.css",
+    "reset.min.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "postcss reset.css > reset.min.css"

@@ -1,28 +1,45 @@
 /*
-  Josh's Custom CSS Reset
+  Based on Josh's Custom CSS Reset with input from Andy Bell and Elad Shechter
   https://www.joshwcomeau.com/css/custom-css-reset/
+  https://piccalil.li/blog/a-modern-css-reset/
+  https://css-tricks.com/an-interview-with-elad-shechter-on-the-new-css-reset/
 */
+html {
+  box-sizing: border-box;
+}
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 * {
   margin: 0;
+  padding: 0;
 }
 html,
 body {
   height: 100%;
 }
-body {
+html {
   line-height: 1.5;
+  text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.4;
 }
 img,
 picture,
 video,
 canvas,
-svg {
+svg,
+iframe,
+object {
   display: block;
   max-width: 100%;
 }
@@ -38,10 +55,32 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li,
+dl,
+dt,
+blockquote {
   overflow-wrap: break-word;
+}
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 #root,
 #__next {
   isolation: isolate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
