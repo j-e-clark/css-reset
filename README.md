@@ -1,6 +1,6 @@
 # css-reset
 
-Based on [Josh's Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) with input from [Andy Bell](https://piccalil.li/blog/a-modern-css-reset/) and [Elad Shechter](https://css-tricks.com/an-interview-with-elad-shechter-on-the-new-css-reset/).
+Based on [Josh's Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) with input from [Chris Coyier](https://css-tricks.com/notes-on-josh-comeaus-custom-css-reset/), [Andy Bell](https://piccalil.li/blog/a-modern-css-reset/) and [Elad Shechter](https://css-tricks.com/an-interview-with-elad-shechter-on-the-new-css-reset/). (Via articles... not personally)
 
 ## What does it do?
 
@@ -29,7 +29,7 @@ Or for the minified version:
 
 ### Installing with NPM
 
-Install the package and inport before the regular styles of the project.
+Install the package and import before the regular styles of the project.
 
 ```html
 <link rel="stylesheet" href="./node_modules/@jeclark/css-reset/reset.css" />
