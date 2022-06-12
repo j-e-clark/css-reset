@@ -1,6 +1,6 @@
 {
   "name": "@jeclark/css-reset",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Minimal CSS reset for modern needs",
   "main": "reset.css",
   "files": [
